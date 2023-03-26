@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <title>Shopping Cart</title>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" rel="stylesheet" />
+   <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+   <header>
+      <img class="logo" src="logo_v1592577422.png" alt="">
+      <h1>Contagem Porks Av. Brasília</h1>
+      <nav class="barranav">
+         <button class="btn-comidas">COMIDAS</button>
+         <button class="btn-drinks">DRINKS</button>
+      </nav>
+   </header>
+   <section class="section-comidas">
+      <section class="container content-section">
+         <div class="cart-row">
+            <span class="cart-item cart-header cart-column">ITEM</span>
+            <span class="cart-price cart-header cart-column">PREÇO</span>
+            <span class="cart-quantity cart-header cart-column">QUANTIDADE</span>
+         </div>
+         <div class="cart-items">
+         </div>
+         <div class="cart-total">
+            <strong class="cart-total-title">Total Comida</strong>
+            <span class="cart-total-price">R$0</span>
+         </div>
+      </section>
+   </section>
+   </section>
+   <section class="section-drinks hide">
+      <section class="container content-section">
+         <div class="drink-row">
+            <span class="cart-item cart-header cart-column">ITEM</span>
+            <span class="drink-price cart-header cart-column">PREÇO</span>
+            <span class="cart-quantity cart-header cart-column">QUANTIDADE</span>
+         </div>
+         <div class="cart-drink-items">
+         </div>
+         <div class="cart-total">
+            <strong class="cart-total-title">Total Drink</strong>
+            <span class="drink-total-price">R$0</span>
+         </div>
+      </section>
+   </section>
+   <!-- <div class="cart-total">
+      <strong class="cart-total-title">Total Drink+Comida</strong>
+      <span class="totalFecha">$0</span>
+   </div> -->
+   <script src="app.js"></script>
+</body>
+
+</html>
