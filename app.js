@@ -213,11 +213,10 @@ function updateCartTotal() {
     var price = parseFloat(priceElement.innerText.replace("R$", ""));
     var quantity = quantityElement.value;
     total += price * quantity;
-    // console.log(teste);
   }
   total = Math.round(total * 100) / 100;
   document.getElementsByClassName("cart-total-price")[0].innerText =
-    "$" + total;
+    "R$" + total;
   return total;
 }
 
@@ -236,15 +235,14 @@ document.querySelectorAll("input[name='inputComida']").forEach((n, i) => {
     var price = parseFloat(priceElement.innerText.replace("R$", ""));
     var quantity = quantityElement.value;
     totalItem = price * quantity;
-    // console.log(teste);
 
     totalItem = Math.round(totalItem * 100) / 100;
     document.querySelectorAll(".cart-quantity-text")[i].innerText =
       "R$" + totalItem;
-    console.log(totalItem);
     anterior = i;
   };
 });
+
 
 var btnComida = document.querySelector(".btn-comidas");
 var btnDrinks = document.querySelector(".btn-drinks");
@@ -388,7 +386,6 @@ function updateDrinkTotal() {
     var price = parseFloat(priceDrinkElement.innerText.replace("R$", ""));
     var quantity = quantityElement.value;
     totalDrink += price * quantity;
-    // console.log(teste);
   }
   totalDrink = Math.round(totalDrink * 100) / 100;
   document.getElementsByClassName("drink-total-price")[0].innerText =
@@ -404,7 +401,6 @@ document.querySelectorAll("input[name='inputDrink']").forEach((n, i) => {
     var totalItem = 0;
 
     var drinkRow = drinkRows[i];
-    console.log(drinkRow);
     var priceElement = drinkRow.getElementsByClassName("drink-price")[0];
     var quantityElement = drinkRow.getElementsByClassName(
       "drink-quantity-input"
@@ -412,7 +408,6 @@ document.querySelectorAll("input[name='inputDrink']").forEach((n, i) => {
     var price = parseFloat(priceElement.innerText.replace("R$", ""));
     var quantity = quantityElement.value;
     totalItem = price * quantity;
-    // console.log(teste);
 
     totalItem = Math.round(totalItem * 100) / 100;
     document.querySelectorAll(".drink-quantity-text")[i].innerText =

@@ -23,6 +23,10 @@ html, body {
     min-height: 100%;
 }
 
+html{
+    position: absolute;
+}
+
 body{
 	border: 10px solid wheat;
 	border-radius: 100px;
@@ -205,13 +209,6 @@ button:hover{
     font-size: 1.2em;
 }
 
-.btn-danger {
-    color: white;
-    background-color: #EB5757;
-    border: none;
-    border-radius: .3em;
-    font-weight: bold;
-}
 
 .btn-danger:hover {
     background-color: #CC4C4C;
@@ -225,6 +222,7 @@ button:hover{
     background-color: #eee;
     color: #333;
     padding: 0;
+    width: 60%;
     text-align: center;
     font-size: 1.2em;
     margin-right: 25px;
@@ -238,12 +236,16 @@ button:hover{
     border: none;
 }
 
-.cart-total {
+.cart-total{
     text-align: end;
-    margin-top: 10px;
-    margin-right: 10px;
-	font-size: 2em;
+    display: flex;
+	font-size: .8em;
 	text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    top: 0;
+    z-index: 1;
 }
 
 .cart-total-title {
@@ -253,7 +255,7 @@ button:hover{
     margin-right: 20px;
 }
 
-.cart-total-price {
+.cart-total-price, .drink-total-price  {
     color: #333;
     font-size: 2em;
 }
