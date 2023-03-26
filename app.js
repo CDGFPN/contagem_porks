@@ -1,179 +1,97 @@
 const comidas = [
-  {
-    id: 1,
-    nome: "Oldwest",
-    quantidade: 0,
+  {    nome: "Oldwest",
     valor: 20,
-    // total: function(){return this.valor}
   },
   {
     id: 2,
     nome: "Porks Bacon",
-    quantidade: 0,
     valor: 20,
-    // total: function(){return this.valor}
   },
-  {
-    id: 3,
-    nome: "Blues Burger",
-    quantidade: 0,
+  {    nome: "Blues Burger",
     valor: 25,
-    // total: function(){return this.valor}
   },
-  {
-    id: 4,
-    nome: "Pork Burrito",
-    quantidade: 0,
+  {    nome: "Pork Burrito",
     valor: 22,
-    // total: function(){return this.valor}
   },
-  {
-    id: 5,
-    nome: "Pernil Municipal",
-    quantidade: 0,
+  {    nome: "Pernil Municipal",
     valor: 20,
-    // total: function(){return this.valor}
   },
-  {
-    id: 6,
-    nome: "Sweet Home Alabama",
-    quantidade: 0,
+  {    nome: "Sweet Home Alabama",
     valor: 22,
-    // total: function(){return this.valor}
   },
-  {
-    id: 7,
-    nome: "Cheese Salad",
-    quantidade: 0,
+  {    nome: "Cheese Salad",
     valor: 22,
-    // total: function(){return this.valor}
   },
-  {
-    id: 8,
-    nome: "Porkspoca",
-    quantidade: 0,
+  {    nome: "Porkspoca",
     valor: 10,
-    // total: function(){return this.valor}
   },
-  {
-    id: 9,
-    nome: "Torresmo de Tira",
-    quantidade: 0,
+  {    nome: "Torresmo de Tira",
     valor: 22,
-    // total: function(){return this.valor}
   },
   {
-    id: 10,
     nome: "Torresmo Mineiro",
-    quantidade: 0,
     valor: 20,
-    // total: function(){return this.valor}
   },
   {
-    id: 11,
     nome: "Mix de Torresmos",
-    quantidade: 0,
     valor: 20,
-    // total: function(){return this.valor}
   },
   {
-    id: 12,
-    nome: "Costelinha",
-    quantidade: 0,
+    nome: "Costelinha BBQ",
     valor: 25,
-    // total: function(){return this.valor}
   },
   {
-    id: 13,
     nome: "Linguicinha Artesanal",
-    quantidade: 0,
     valor: 20,
-    // total: function(){return this.valor}
   },
   {
-    id: 14,
     nome: "Bei Com Melado",
-    quantidade: 0,
     valor: 18,
-    // total: function(){return this.valor}
   },
   {
-    id: 15,
     nome: "Calabresa",
-    quantidade: 0,
     valor: 20,
-    // total: function(){return this.valor}
   },
   {
-    id: 16,
     nome: "Pastelzinho",
-    quantidade: 0,
     valor: 25,
-    // total: function(){return this.valor}
   },
   {
-    id: 17,
     nome: "Queijinho Empanadinho",
-    quantidade: 0,
     valor: 22,
-    // total: function(){return this.valor}
   },
   {
-    id: 18,
     nome: "Bolinho de Macaxeira",
-    quantidade: 0,
     valor: 22,
-    // total: function(){return this.valor}
   },
   {
-    id: 19,
     nome: "Batata Tropeira",
-    quantidade: 0,
     valor: 25,
-    // total: function(){return this.valor}
   },
   {
-    id: 20,
     nome: "Fish and Chips",
-    quantidade: 0,
     valor: 28,
-    // total: function(){return this.valor}
   },
   {
-    id: 21,
     nome: "Batata Rústica",
-    quantidade: 0,
     valor: 20,
-    // total: function(){return this.valor}
   },
   {
-    id: 22,
     nome: "Porks Fritas",
-    quantidade: 0,
     valor: 20,
-    // total: function(){return this.valor}
   },
   {
-    id: 23,
     nome: "Fucking Fritas",
-    quantidade: 0,
     valor: 25,
-    // total: function(){return this.valor}
   },
   {
-    id: 24,
     nome: "Dadinho",
-    quantidade: 0,
     valor: 23,
-    // total: function(){return this.valor}
   },
   {
-    id: 25,
     nome: "Pastel Raiz",
-    quantidade: 0,
     valor: 25,
-    // total: function(){return this.valor}
-  },
+  }
 ];
 
 comidas.forEach(function (comidas) {
@@ -335,7 +253,7 @@ const drinks = [
   {
     nome: "Red Bull",
     valor: 16,
-  },
+  }
 ];
 
 btnComida.addEventListener("click", () => {
