@@ -73,6 +73,7 @@ function addItemToCart(id, title, price) {
       input.value = parseInt(input.value) + 1;
       input.dispatchEvent(new Event("change"));
       updateCartTotal()
+      updateTotalFecha()
   });
 
   decreaseButton.addEventListener("click", () => {
@@ -81,7 +82,9 @@ function addItemToCart(id, title, price) {
     }
     input.dispatchEvent(new Event("change"));
       updateCartTotal()
+      updateTotalFecha()
   });
+
 
   cartRow.decreaseButton
   cartRow.increaseButton
@@ -192,7 +195,8 @@ function addDrinkToCart(id, title, price) {
   increaseButton.addEventListener("click", () => {
       input.value = parseInt(input.value) + 1;
       input.dispatchEvent(new Event("change"));
-      updateCartTotal()
+      updateDrinkTotal()
+      updateTotalFecha()
   });
 
   decreaseButton.addEventListener("click", () => {
@@ -200,7 +204,8 @@ function addDrinkToCart(id, title, price) {
       input.value = parseInt(input.value) - 1;
     }
     input.dispatchEvent(new Event("change"));
-      updateCartTotal()
+      updateDrinkTotal()
+      updateTotalFecha()
   });
 
   cartRow.decreaseButton
@@ -209,6 +214,12 @@ function addDrinkToCart(id, title, price) {
     .getElementsByClassName("drink-quantity-input")[0]
     .addEventListener("change", updateDrinkTotal);
 
+}
+
+function updateTotalFecha(){
+  let totalDrink = parseInt(document.querySelector(".cart-total-price").innerText.replace("R$", ""))
+  let totalComida = parseInt(document.querySelector(".drink-total-price").innerText.replace("R$", ""))
+  document.querySelector(".fecha-total-price").innerText = `R$${totalDrink+totalComida}`
 }
 
 function updateDrinkTotal() {
@@ -228,7 +239,7 @@ function updateDrinkTotal() {
   }
   totalDrink = Math.round(totalDrink * 100) / 100;
   document.getElementsByClassName("drink-total-price")[0].innerText =
-    "$" + totalDrink;
+    "R$" + totalDrink;
 }
 
 document.querySelectorAll("input[name='inputDrink']").forEach((n, i) => {
@@ -254,3 +265,5 @@ document.querySelectorAll("input[name='inputDrink']").forEach((n, i) => {
     anterior = i;
   };
 });
+
+

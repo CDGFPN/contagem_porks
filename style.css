@@ -191,7 +191,7 @@ button:hover{
     margin-right: 20px;
 }
 
-.cart-total-price, .drink-total-price  {
+.cart-total div span{
     color: #333;
     font-size: 2em;
 }
